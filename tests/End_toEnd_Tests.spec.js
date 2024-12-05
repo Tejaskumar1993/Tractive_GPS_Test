@@ -6,6 +6,7 @@ import { TestData } from '../testdata/TestData.js';
 import {Helper} from "../utils/helper.js";
 import { expect } from 'chai';
 
+
 describe('End-to-End Tests', function Tractive_Signup_Login_Functionality() {
     let browser, context, page;
     let loginPage, homePage, signUpPage, testData,helper;
@@ -199,7 +200,7 @@ describe('End-to-End Tests', function Tractive_Signup_Login_Functionality() {
         await signUpPage.enterLastname(Valid_New_fresh_Data.lastName);
         await signUpPage.enterEmail(Valid_New_fresh_Data.email);
         await signUpPage.enterPassword(Valid_New_fresh_Data.password);
-        await signUpPage.clickSubmitButtonIfVisible();
+        await signUpPage.clickSubmitButtonIfNotVisible();
         let alertMessage = '';
         page.on('dialog', async (dialog) => {
             alertMessage = dialog.message();
@@ -212,7 +213,7 @@ describe('End-to-End Tests', function Tractive_Signup_Login_Functionality() {
     it('should log in and change email and password', async function logInAndChangeCredentials() {
         this.timeout(30000);
         await loginPage.open();
-        const loginData = testData.valid_login();  // Use valid login data
+        const loginData = testData.valid_login();
         await loginPage.enterEmail(loginData.email);
         await loginPage.enterPassword(loginData.password);
         await loginPage.clickSubmitButton();

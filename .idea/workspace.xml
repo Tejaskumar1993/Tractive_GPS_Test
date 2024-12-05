@@ -9,6 +9,8 @@
       <change beforePath="$PROJECT_DIR$/Pages/Homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Homepage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mochawesome-report/mochawesome.html" beforeDir="false" afterPath="$PROJECT_DIR$/mochawesome-report/mochawesome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mochawesome-report/mochawesome.json" beforeDir="false" afterPath="$PROJECT_DIR$/mochawesome-report/mochawesome.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/End_toEnd_Tests.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/End_toEnd_Tests.spec.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

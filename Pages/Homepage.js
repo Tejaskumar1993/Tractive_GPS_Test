@@ -1,4 +1,7 @@
 // /pages/HomePage.js
+import * as chai from "chai";
+import {remote} from "webdriverio";
+
 export class HomePage {
     constructor(page) {
         this.page = page;
@@ -39,8 +42,12 @@ export class HomePage {
         }
     }
     async verifyUrl_ManagePage() {
-        const currentUrl = this.page.Manage_page_url; // Correct way to get the current URL in WebDriverIO
-        assert.strictEqual(currentUrl, this.Manage_page_url, 'URL does not match');
+        const currentUrl = await browser.getUrl(); // Get the current URL
+        chai.assert.strictEqual(
+            currentUrl,
+            this.Manage_page_url,
+            'The current URL does not match the expected URL.'
+        );
     }
 
     async verifyManagePageTitle() {
